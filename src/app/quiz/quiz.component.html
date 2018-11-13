@@ -1,0 +1,7 @@
+<div class="NewPartie" *ngIf="currentQuestion == null">
+    <button mat-raised-button color="warn" class="ButtonNew-game" (click)="newGame()">Nouvelle partie</button>
+</div>
+
+<div class="Game" *ngIf="newGame">
+    <p>Quelle est la capital du {{question.pays}} </p>
+</div>
